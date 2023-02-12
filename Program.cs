@@ -25,7 +25,7 @@ string[] finalarray = new string[firstarray.Length]; // преобразован
 ArrayFind3(firstarray, finalarray);
 PrintArray(finalarray);
 
-// Пример
+// Примеры
 //{ "hello","2","world",":-)"}
 //{ "1234","1567","-2","conputer science"}
 //{"Russia","Denmark","Kazan"}
