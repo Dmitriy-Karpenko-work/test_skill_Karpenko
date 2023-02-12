@@ -1,11 +1,11 @@
-﻿void SecondArrayWithIF(string[] array1, string[] array2)// основной метод
+﻿void ArrayFind3(string[] firstarray, string[] finalarray)// основной метод
 {
     int count = 0;
-    for (int i = 0; i < array1.Length; i++)
+    for (int i = 0; i < firstarray.Length; i++)
     {
-    if(array1[i].Length <= 3)
+    if(firstarray[i].Length <= 3)
         {
-        array2[count] = array1[i];
+        finalarray[count] = firstarray[i];
         count++;
         }
     }
@@ -19,11 +19,11 @@ void PrintArray(string[] array) // метод показа массива
     Console.WriteLine();
 }
 
-string[] array1 = new string[4] { "hello","2","world",":-)"}; // массив вводим в ручную 
-string[] array2 = new string[array1.Length]; // преобразованый массив
+string[] firstarray = new string[4] { "hello","2","world",":-)"}; // массив вводим в ручную 
+string[] finalarray = new string[firstarray.Length]; // преобразованый массив
 
-SecondArrayWithIF(array1, array2);
-PrintArray(array2);
+ArrayFind3(firstarray, finalarray);
+PrintArray(finalarray);
 
 // Примеры
 //{ "hello","2","world",":-)"}
