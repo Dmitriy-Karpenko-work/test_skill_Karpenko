@@ -1,2 +1,31 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿void SecondArrayWithIF(string[] array1, string[] array2)// основной метод
+{
+    int count = 0;
+    for (int i = 0; i < array1.Length; i++)
+    {
+    if(array1[i].Length <= 3)
+        {
+        array2[count] = array1[i];
+        count++;
+        }
+    }
+}
+void PrintArray(string[] array) // метод показа массива
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.Write($"{array[i]} ");
+    }
+    Console.WriteLine();
+}
+
+string[] array1 = new string[4] { "hello","2","world",":-)"}; // массив вводим в ручную 
+string[] array2 = new string[array1.Length]; // преобразованый массив
+
+SecondArrayWithIF(array1, array2);
+PrintArray(array2);
+
+// Примеры
+//{ "hello","2","world",":-)"}
+//{ "1234","1567","-2","conputer science"}
+//{"Russia","Denmark","Kazan"}
